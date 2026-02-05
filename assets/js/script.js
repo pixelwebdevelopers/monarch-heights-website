@@ -1114,6 +1114,9 @@
     });
 
     $(window).on('load', function () {
+        // Hide the preloader
+        preloader();
+        
         if (localStorage.getItem('mapActive') == 'pin1') {
             $('#location-wrap').addClass('pin1')
             $('#location1').addClass('active')
