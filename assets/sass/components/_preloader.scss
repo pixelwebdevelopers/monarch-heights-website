@@ -38,6 +38,19 @@
 		vertical-align: middle;
 		text-align: left;
 		font-size: 0;
+		position: relative;
+		
+		img {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 70px;
+			height: 70px;
+			object-fit: contain;
+			border-radius: 50%;
+			filter: brightness(0) invert(1);
+		}
 	  }
 	  * {
 		-webkit-transition: all 0.3s;
