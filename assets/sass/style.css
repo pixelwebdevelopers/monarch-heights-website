@@ -13286,6 +13286,7 @@ img {
   
   .completed-project-card {
     margin: 10px 5px;
+    min-height: 390px;
   }
   
   .completed-project-card .project-image {
