@@ -13027,4 +13027,282 @@ img {
 .error-404-section .error-message .theme-btn::before, .error-404-section .error-message .view-cart-btn::before {
   border: 1px dashed #efdcaa;
 }
+/* =====================================================
+   Completed Projects Carousel Section
+   ===================================================== */
+.wpo-completed-projects-section {
+  background: #F5F6E4;
+  position: relative;
+  overflow: hidden;
+}
+
+.wpo-completed-projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/slider/noise.png);
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+.wpo-completed-projects-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/slider/shape.png) no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.wpo-completed-projects-section > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.wpo-completed-projects-section .wpo-section-title h2 {
+  color: #1C1817;
+}
+
+.wpo-completed-projects-section .wpo-section-title h2 span::before {
+  background: #efdcaa;
+}
+
+.wpo-completed-projects-section .wpo-section-title small {
+  background: #efdcaa;
+  color: #1C1817;
+}
+
+.completed-projects-carousel {
+  padding: 0 10px;
+}
+
+.completed-project-card {
+  margin: 15px 10px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(28, 24, 23, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 5px 20px rgba(28, 24, 23, 0.08);
+  min-height: 450px;
+}
+
+.completed-project-card:hover {
+  border-color: #efdcaa;
+}
+
+.completed-project-card .project-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.completed-project-card .project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.completed-project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.completed-project-card .project-image .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(28, 24, 23, 0.7) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.completed-project-card .project-content {
+  padding: 25px 20px;
+  position: relative;
+  background: #fff;
+}
+
+.completed-project-card .project-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 3px;
+  background: linear-gradient(90deg, #efdcaa 0%, rgba(239, 220, 170, 0.3) 100%);
+  border-radius: 2px;
+}
+
+.completed-project-card .project-content h3 {
+  color: #1C1817;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.completed-project-card:hover .project-content h3 {
+  color: #002a4c;
+}
+
+.completed-project-card .project-highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.completed-project-card .project-highlights li {
+  color: #687693;
+  font-size: 14px;
+  line-height: 1.7;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.completed-project-card .project-highlights li:last-child {
+  margin-bottom: 0;
+}
+
+.completed-project-card .project-highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background: #efdcaa;
+  border-radius: 50%;
+}
+
+/* Carousel Navigation */
+.completed-projects-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  padding: 0 0;
+}
+
+.completed-projects-carousel .owl-nav button {
+  pointer-events: all;
+  width: 50px;
+  height: 50px;
+  background: #fff !important;
+  border: 2px solid #efdcaa !important;
+  border-radius: 50%;
+  color: #1C1817 !important;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(28, 24, 23, 0.1);
+}
+
+.completed-projects-carousel .owl-nav button:hover {
+  background: #efdcaa !important;
+  color: #1C1817 !important;
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(239, 220, 170, 0.4);
+}
+
+.completed-projects-carousel .owl-nav .owl-prev {
+  margin-left: -25px;
+}
+
+.completed-projects-carousel .owl-nav .owl-next {
+  margin-right: -25px;
+}
+
+/* Progress indicator */
+.completed-projects-carousel .owl-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.completed-projects-carousel .owl-dots .owl-dot {
+  width: 30px;
+  height: 4px;
+  background: rgba(28, 24, 23, 0.15);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.completed-projects-carousel .owl-dots .owl-dot.active {
+  width: 50px;
+  background: #efdcaa;
+}
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+  .completed-projects-carousel .owl-nav .owl-prev {
+    margin-left: 10px;
+  }
+  .completed-projects-carousel .owl-nav .owl-next {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .completed-project-card .project-image {
+    height: 240px;
+  }
+  
+  .completed-project-card .project-content h3 {
+    font-size: 18px;
+  }
+  
+  .completed-projects-carousel .owl-nav {
+    display: none;
+  }
+  
+  .completed-projects-carousel .owl-dots {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wpo-completed-projects-section {
+    padding: 60px 0;
+  }
+  
+  .completed-project-card {
+    margin: 10px 5px;
+  }
+  
+  .completed-project-card .project-image {
+    height: 220px;
+  }
+  
+  .completed-project-card .project-content {
+    padding: 20px 15px;
+  }
+  
+  .completed-project-card .project-content h3 {
+    font-size: 17px;
+  }
+  
+  .completed-project-card .project-highlights li {
+    font-size: 13px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

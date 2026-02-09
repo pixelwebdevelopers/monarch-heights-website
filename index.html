@@ -315,6 +315,106 @@
         </div>
       </section>
       <!-- end wpo-about-section-->
+      <!-- start wpo-completed-projects-section -->
+      <section class="wpo-completed-projects-section section-padding">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="wpo-section-title">
+                <small>Our Portfolio</small>
+                <h2>Client's <span>Completed</span> Projects</h2>
+              </div>
+            </div>
+          </div>
+          <div class="completed-projects-carousel owl-carousel">
+            <!-- Central Park Teaching Hospital -->
+            <div class="completed-project-card">
+              <div class="project-image">
+                <img src="assets/images/completed-projects/central-park-teaching-hospital.png" alt="Central Park Teaching Hospital">
+                <div class="overlay"></div>
+              </div>
+              <div class="project-content">
+                <h3>Central Park Teaching Hospital</h3>
+                <ul class="project-highlights">
+                  <li>Approximately 300,000 sq ft covered area</li>
+                  <li>Commitment to excellence in healthcare</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Central Park Medical College -->
+            <div class="completed-project-card">
+              <div class="project-image">
+                <img src="assets/images/completed-projects/central-park-medical-college.png" alt="Central Park Medical College">
+                <div class="overlay"></div>
+              </div>
+              <div class="project-content">
+                <h3>Central Park Medical College</h3>
+                <ul class="project-highlights">
+                  <li>Approximately 400,000 sq ft multistorey building</li>
+                  <li>Second successful hospital construction</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Chughtai Tower Lahore -->
+            <div class="completed-project-card">
+              <div class="project-image">
+                <img src="assets/images/completed-projects/chugtai-tower-lahore.png" alt="Chughtai Tower Lahore">
+                <div class="overlay"></div>
+              </div>
+              <div class="project-content">
+                <h3>Chughtai Tower Lahore</h3>
+                <ul class="project-highlights">
+                  <li>Approximately 500,000 sq ft on Jail Road</li>
+                  <li>State-of-the-art medical high-rise facility</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Tim Hortons Lake City -->
+            <div class="completed-project-card">
+              <div class="project-image">
+                <img src="assets/images/completed-projects/tim-hortons-lakecity-lahore.png" alt="Tim Hortons Lake City Lahore">
+                <div class="overlay"></div>
+              </div>
+              <div class="project-content">
+                <h3>Tim Hortons Lake City Lahore</h3>
+                <ul class="project-highlights">
+                  <li>Collaboration with Shelters Engineering Services</li>
+                  <li>International brand partnership</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Eagle Heights -->
+            <div class="completed-project-card">
+              <div class="project-image">
+                <img src="assets/images/completed-projects/eagle-heights.png" alt="Eagle Heights">
+                <div class="overlay"></div>
+              </div>
+              <div class="project-content">
+                <h3>Eagle Heights</h3>
+                <ul class="project-highlights">
+                  <li>Approximately 26,000 sq ft modern building</li>
+                  <li>Eagle Group real estate project</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Dream Galleria -->
+            <div class="completed-project-card">
+              <div class="project-image">
+                <img src="assets/images/completed-projects/dream-galleria.jpeg" alt="Dream Galleria">
+                <div class="overlay"></div>
+              </div>
+              <div class="project-content">
+                <h3>Dream Galleria</h3>
+                <ul class="project-highlights">
+                  <li>Nearly 70,000 sq ft on Defence Road</li>
+                  <li>Largest LDA-approved project on Defence Road</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end wpo-completed-projects-section -->
       <!-- start wpo-project-section -->
       <section class="wpo-project-section section-padding">
         <div class="container">
@@ -595,6 +695,27 @@
     <script src="assets/js/payment-cal.js"></script>
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+    <script>
+      // Completed Projects Carousel
+      $(document).ready(function(){
+        $('.completed-projects-carousel').owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          autoplayHoverPause: true,
+          smartSpeed: 800,
+          nav: true,
+          dots: true,
+          navText: ['<i class="ti-arrow-left"></i>', '<i class="ti-arrow-right"></i>'],
+          margin: 20,
+          responsive: {
+            0: { items: 1 },
+            768: { items: 2 },
+            992: { items: 3 }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
 
