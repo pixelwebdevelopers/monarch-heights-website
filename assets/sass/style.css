@@ -5748,6 +5748,41 @@ img {
 }
 
 /* 3.5 wpo-plan-section */
+
+@media (max-width: 767px) {
+  .wpo-service-section .wpo-service-wrap .wpo-service-item .wpo-service-icon span,
+  .wpo-service-section-s2 .wpo-service-wrap .wpo-service-item .wpo-service-icon span {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+  }
+
+  .wpo-service-section .wpo-service-wrap .wpo-service-item .wpo-service-icon span:before,
+  .wpo-service-section-s2 .wpo-service-wrap .wpo-service-item .wpo-service-icon span:before {
+    width: 58px;
+    height: 58px;
+    left: 5px;
+    top: 5px;
+  }
+
+  .wpo-service-section .wpo-service-wrap .wpo-service-item .wpo-service-text h3,
+  .wpo-service-section-s2 .wpo-service-wrap .wpo-service-item .wpo-service-text h3 {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+
+  .wpo-service-section .wpo-service-wrap .wpo-service-item .wpo-service-icon, 
+  .wpo-service-section-s2 .wpo-service-wrap .wpo-service-item .wpo-service-icon {
+    margin-bottom: 10px;
+  }
+
+  .wpo-service-section .wpo-service-wrap .wpo-service-item,
+  .wpo-service-section-s2 .wpo-service-wrap .wpo-service-item {
+    margin-bottom: 30px;
+    padding: 0 5px;
+  }
+}
 .wpo-plan-section,
 .wpo-plan-section-s2 {
   background: #F5F6E4;
@@ -5783,6 +5818,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  flex-wrap: nowrap;
   margin-bottom: 80px;
 }
 
@@ -5795,47 +5831,57 @@ img {
 
 .wpo-plan-section .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs .nav-item .nav-link,
 .wpo-plan-section-s2 .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs .nav-item .nav-link {
-  width: 210px;
   height: 60px;
   line-height: 50px;
   border: 1px solid #1C1817;
   text-align: center;
-  margin: 0 10px;
+  margin: 0 5px;
+  padding: 5px 20px;
   border-radius: 0;
   font-family: "Epilogue";
-  font-size: 17px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
   color: #1C1817;
+  white-space: nowrap;
 }
 
 @media (max-width: 1399px) {
   .wpo-plan-section .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs .nav-item .nav-link,
   .wpo-plan-section-s2 .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs .nav-item .nav-link {
-    width: 150px;
     height: 50px;
     line-height: 40px;
-    font-size: 15px;
+    font-size: 13px;
+    padding: 5px 15px;
+    margin: 0 4px;
   }
 }
 
 @media (max-width: 991px) {
   .wpo-plan-section .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs .nav-item .nav-link,
   .wpo-plan-section-s2 .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs .nav-item .nav-link {
-    width: 125px;
     height: 40px;
     line-height: 25px;
-    font-size: 13px;
-    margin: 0 5px;
-    padding: 10px;
+    font-size: 11px;
+    margin: 0 3px;
+    padding: 8px 10px;
   }
 }
 
 @media (max-width: 767px) {
+  .wpo-plan-section .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs,
+  .wpo-plan-section-s2 .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs {
+    flex-wrap: wrap;
+  }
+
   .wpo-plan-section .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs .nav-item .nav-link,
   .wpo-plan-section-s2 .wpo-plan-wrap .wpo-plan-tab-menu ul.nav-tabs .nav-item .nav-link {
-    margin: 0 5px 8px;
+    margin: 0 3px 6px;
+    font-size: 11px;
+    padding: 6px 12px;
+    height: auto;
+    line-height: 1.4;
   }
 }
 
@@ -6808,6 +6854,11 @@ img {
 .wpo-team-section-s2 .wpo-team-wrap-s2 .owl-nav [class*=owl-] .fi::before,
 .wpo-team-section-s2 .wpo-team-wrap-s3 .owl-nav [class*=owl-] .fi::before {
   font-size: 20px;
+}
+
+.wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-content h3 + span,
+.wpo-team-section-s2 .wpo-team-wrap .wpo-team-item .wpo-team-content h3 + span {
+  font-size: 12px;
 }
 
 /* 3.9 wpo-testimonial-section */
@@ -13303,6 +13354,260 @@ img {
   
   .completed-project-card .project-highlights li {
     font-size: 13px;
+  }
+}
+
+/* Payment Plan Tables */
+.payment-plan-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 30px;
+}
+
+h3.floor-title {
+  font-family: "Epilogue";
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1C1817;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.payment-plan-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+  font-size: 13px;
+}
+
+.payment-plan-table thead th {
+  background: #1C1817;
+  color: #efdcaa;
+  font-family: "Epilogue";
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 8px;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  border: 1px solid #333;
+}
+
+.payment-plan-table tbody td {
+  padding: 10px 8px;
+  text-align: center;
+  border: 1px solid #e0e0d0;
+  font-family: "Epilogue";
+  font-size: 13px;
+  font-weight: 500;
+  color: #1C1817;
+  white-space: nowrap;
+}
+
+.payment-plan-table tbody tr:nth-child(even) {
+  background: #faf9f0;
+}
+
+.payment-plan-table tbody tr:nth-child(odd) {
+  background: #fff;
+}
+
+.payment-plan-table tbody tr:hover {
+  background: #f5f0dc;
+}
+
+.payment-plan-table .sold-out-text {
+  color: #c0392b;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.payment-plan-table .sold-out-row {
+  background: #fef0ef !important;
+}
+
+.sold-out-full {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.sold-out-full h2 {
+  font-family: "Epilogue";
+  font-size: 48px;
+  font-weight: 800;
+  color: #c0392b;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.sold-out-full p {
+  font-family: "Epilogue";
+  font-size: 16px;
+  color: #666;
+}
+
+.discount-policy {
+  background: #faf9f0;
+  border: 1px solid #e0e0d0;
+  padding: 25px 30px;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+
+.discount-policy h4 {
+  font-family: "Epilogue";
+  font-size: 16px;
+  font-weight: 700;
+  color: #1C1817;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.discount-policy .confirm-note {
+  font-family: "Epilogue";
+  font-size: 14px;
+  font-weight: 600;
+  font-style: italic;
+  color: #1C1817;
+  margin-bottom: 15px;
+}
+
+.discount-policy ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.discount-policy ul li {
+  font-family: "Epilogue";
+  font-size: 13px;
+  color: #424740;
+  padding: 4px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.discount-policy ul li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #efdcaa;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+  .payment-plan-table-wrap h3.floor-title {
+    font-size: 18px;
+  }
+  
+  .payment-plan-table {
+    font-size: 12px;
+  }
+  
+  .payment-plan-table thead th {
+    font-size: 10px;
+    padding: 8px 5px;
+  }
+  
+  .payment-plan-table tbody td {
+    font-size: 12px;
+    padding: 8px 5px;
+  }
+}
+
+@media (max-width: 575px) {
+  .sold-out-full h2 {
+    font-size: 32px;
+  }
+  
+  .discount-policy {
+    padding: 15px 20px;
+  }
+}
+
+/* Payment Results Grid */
+.payment-results-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin-top: 35px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.payment-result-card {
+  background: #1C1817;
+  border-radius: 8px;
+  padding: 20px 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-result-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.payment-result-card span {
+  font-family: "Epilogue";
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #efdcaa;
+  letter-spacing: 0.5px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.payment-result-card h3 {
+  font-family: "Epilogue";
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.payment-result-card.highlight {
+  background: linear-gradient(135deg, #efdcaa 0%, #d4b978 100%);
+}
+
+.payment-result-card.highlight span {
+  color: #1C1817;
+}
+
+.payment-result-card.highlight h3 {
+  color: #1C1817;
+  font-size: 20px;
+}
+
+@media (max-width: 991px) {
+  .payment-results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .payment-results-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .payment-result-card {
+    padding: 15px 10px;
+  }
+
+  .payment-result-card h3 {
+    font-size: 15px;
+  }
+
+  .payment-result-card span {
+    font-size: 10px;
   }
 }
 

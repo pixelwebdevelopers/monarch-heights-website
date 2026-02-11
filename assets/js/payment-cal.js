@@ -1,14 +1,40 @@
-function estimatePayment(){
-    let purchase_price = +$("#purchase_price").val(); //amount
-    let down_payment = +$("#down_payment").val(); //percentage
-    let loan_term = +$("#loan_term").val(); //year
-    let interest_rate = +$("#interest_rate").val(); //percentage interest rate
+function estimatePayment() {
+    let totalPrice = +document.getElementById("purchase_price").value;
+    let installmentMonths = +document.getElementById("loan_term").value || 48;
 
-    let down_payment_amount = down_payment / 100 * purchase_price;
-    let total_amount = purchase_price - down_payment_amount; //month
-    let total_loan_amount = total_amount + total_amount * (interest_rate / 100); //month
-    let monthly_payment =  total_loan_amount / (loan_term * 12);
-    $("#down_payment_value").text('$'+down_payment_amount.toFixed(2));
-    $("#load_amount_value").text('$'+total_loan_amount.toFixed(2));
-    $("#monthly_payment_value").text('$'+monthly_payment.toFixed(2));
+    if (totalPrice <= 0 || isNaN(totalPrice)) {
+        alert("Please enter a valid Total Price.");
+        return;
+    }
+
+    // Monarch Heights Payment Plan Breakdown
+    // Booking: 12.5%
+    // Confirmation: 12.5%
+    // 48 Monthly Installments: 50% total (divided equally)
+    // Half Yearly (8 payments): included in the 50%
+    // Grey Structure: 12.5%
+    // Possession: 12.5%
+
+    let bookingAmount = totalPrice * 0.125;
+    let confirmationAmount = totalPrice * 0.125;
+    let installmentTotal = totalPrice * 0.5;
+    let monthlyInstallment = installmentTotal / installmentMonths;
+    let greyStructure = totalPrice * 0.125;
+    let possession = totalPrice * 0.125;
+
+    // Format numbers with commas (PKR style)
+    function formatPKR(num) {
+        return "Rs. " + Math.round(num).toLocaleString("en-PK");
+    }
+
+    document.getElementById("down_payment_value").textContent =
+        formatPKR(bookingAmount);
+    document.getElementById("monthly_payment_value").textContent =
+        formatPKR(monthlyInstallment);
+    document.getElementById("load_amount_value").textContent =
+        formatPKR(confirmationAmount);
+    document.getElementById("grey_structure_value").textContent =
+        formatPKR(greyStructure);
+    document.getElementById("possession_value").textContent =
+        formatPKR(possession);
 }

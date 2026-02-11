@@ -194,53 +194,53 @@
       <section class="wpo-payment-section section-padding">
         <div class="container">
           <div class="wpo-payment-wrap">
-            <div class="row">
-              <div class="col col-lg-3 col-12">
+            <div class="row align-items-center">
+              <div class="col-lg-4 col-12">
                 <div class="wpo-section-title">
                   <small>Payment Plan</small>
                   <h2>Your <span>Payment</span> Estimate</h2>
                 </div>
               </div>
-              <div class="col col-lg-6">
+              <div class="col-lg-4 col-md-6 col-12">
                 <div class="payment-form-area">
                   <div class="form-group">
                     <label>Total Price (PKR):</label>
                     <input type="number" value="7200000" id="purchase_price" />
                   </div>
                   <div class="form-group">
-                    <label>Booking (12.5%):</label>
-                    <input type="number" value="12.5" id="down_payment" />
-                  </div>
-                  <div class="form-group">
                     <label>Installment Months:</label>
                     <input type="number" value="48" id="loan_term" />
                   </div>
-                  <div class="form-group">
-                    <label>Monthly Installment:</label>
-                    <input type="number" value="45000" id="interest_rate" readonly />
-                  </div>
-                  <div class="form-group">
-                    <button class="theme-btn" onclick="estimatePayment()">
-                      Calculate Payment
-                    </button>
-                  </div>
                 </div>
               </div>
-              <div class="col col-lg-3 col-12">
-                <div class="payment-result">
-                  <div class="result-item">
-                    <span>Booking Amount:</span>
-                    <h3 id="down_payment_value">Rs. 900,000</h3>
-                  </div>
-                  <div class="result-item">
-                    <span>Monthly Installment:</span>
-                    <h3 id="monthly_payment_value">Rs. 45,000</h3>
-                  </div>
-                  <div class="result-item">
-                    <span>Confirmation (12.5%):</span>
-                    <h3 id="load_amount_value">Rs. 900,000</h3>
-                  </div>
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="form-group" style="text-align:center; padding-top: 20px;">
+                  <button class="theme-btn" onclick="estimatePayment()" style="background: #1C1817; color: #fff; padding: 15px 40px; border: none; border-radius: 4px; font-family: 'Epilogue'; font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; cursor: pointer; transition: background 0.3s ease;">
+                    Calculate Payment
+                  </button>
                 </div>
+              </div>
+            </div>
+            <div class="payment-results-grid">
+              <div class="payment-result-card">
+                <span>Booking (12.5%)</span>
+                <h3 id="down_payment_value">Rs. 900,000</h3>
+              </div>
+              <div class="payment-result-card">
+                <span>Confirmation (12.5%)</span>
+                <h3 id="load_amount_value">Rs. 900,000</h3>
+              </div>
+              <div class="payment-result-card highlight">
+                <span>Monthly Installment</span>
+                <h3 id="monthly_payment_value">Rs. 75,000</h3>
+              </div>
+              <div class="payment-result-card">
+                <span>Grey Structure (12.5%)</span>
+                <h3 id="grey_structure_value">Rs. 900,000</h3>
+              </div>
+              <div class="payment-result-card">
+                <span>Possession (12.5%)</span>
+                <h3 id="possession_value">Rs. 900,000</h3>
               </div>
             </div>
           </div>
@@ -265,7 +265,7 @@
           </div>
           <div class="wpo-service-wrap">
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-12">
+              <div class="col-lg-4 col-md-6 col-6">
                 <div class="wpo-service-item">
                   <div class="wpo-service-icon">
                     <span><img src="assets/images/service/1.svg" alt=""/></span>
@@ -278,7 +278,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 col-12">
+              <div class="col-lg-4 col-md-6 col-6">
                 <div class="wpo-service-item">
                   <div class="wpo-service-icon">
                     <span><img src="assets/images/service/2.svg" alt=""/></span>
@@ -291,7 +291,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 col-12">
+              <div class="col-lg-4 col-md-6 col-6">
                 <div class="wpo-service-item">
                   <div class="wpo-service-icon">
                     <span><img src="assets/images/service/3.svg" alt=""/></span>
@@ -304,7 +304,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 col-12">
+              <div class="col-lg-4 col-md-6 col-6">
                 <div class="wpo-service-item">
                   <div class="wpo-service-icon">
                     <span><img src="assets/images/service/4.svg" alt=""/></span>
@@ -317,7 +317,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 col-12">
+              <div class="col-lg-4 col-md-6 col-6">
                 <div class="wpo-service-item">
                   <div class="wpo-service-icon">
                     <span><img src="assets/images/service/5.svg" alt=""/></span>
@@ -330,7 +330,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-6 col-12">
+              <div class="col-lg-4 col-md-6 col-6">
                 <div class="wpo-service-item">
                   <div class="wpo-service-icon">
                     <span><img src="assets/images/service/6.svg" alt=""/></span>
@@ -390,11 +390,11 @@
                 <li class="nav-item" role="presentation">
                   <a
                     class="nav-link"
-                    id="second-floor-tab"
+                    id="third-floor-tab"
                     data-bs-toggle="tab"
-                    href="#second-floor"
+                    href="#third-floor"
                     role="tab"
-                    aria-controls="second-floor"
+                    aria-controls="third-floor"
                     aria-selected="false"
                     >3rd Floor</a
                   >
@@ -402,23 +402,35 @@
                 <li class="nav-item" role="presentation">
                   <a
                     class="nav-link"
-                    id="studio-floor-tab"
+                    id="fifth-floor-tab"
                     data-bs-toggle="tab"
-                    href="#studio-floor"
+                    href="#fifth-floor"
                     role="tab"
-                    aria-controls="studio-floor"
+                    aria-controls="fifth-floor"
                     aria-selected="false"
-                    >5th &amp; 6th Floor</a
+                    >5th Floor</a
                   >
                 </li>
                 <li class="nav-item" role="presentation">
                   <a
                     class="nav-link"
-                    id="penthouse-tab"
+                    id="sixth-floor-tab"
                     data-bs-toggle="tab"
-                    href="#penthouse"
+                    href="#sixth-floor"
                     role="tab"
-                    aria-controls="penthouse"
+                    aria-controls="sixth-floor"
+                    aria-selected="false"
+                    >6th Floor</a
+                  >
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="ninth-floor-tab"
+                    data-bs-toggle="tab"
+                    href="#ninth-floor"
+                    role="tab"
+                    aria-controls="ninth-floor"
                     aria-selected="false"
                     >9th Floor</a
                   >
@@ -427,140 +439,607 @@
             </div>
 
             <div class="tab-content">
-              <div role="tabpanel" class="tab-pane fade in" id="studio-floor">
-                <div class="wpo-plan-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-12">
-                      <div class="wpo-plan-img">
-                        <img src="assets/images/plan/floor-plan-1.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                      <div class="wpo-plan-content-box">
-                        <div class="wpo-plan-content">
-                          <img src="assets/images/plan/img-2.jpg" alt="" />
-                          <ul>
-                            <li>Area Range <span>260-450 Sq Ft</span></li>
-                            <li>Price/Sq Ft<span>Rs. 18,000</span></li>
-                            <li>Floor Type<span>Studio</span></li>
-                            <li>Total Units<span>15+</span></li>
-                            <li>Status<span>Available</span></li>
-                          </ul>
-                          <a href="contact.html">Book Now</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <!-- GROUND FLOOR (COMMERCIAL OUTLETS) -->
               <div
                 role="tabpanel"
                 class="tab-pane fade in show active"
                 id="ground-floor"
               >
-                <div class="wpo-plan-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-12">
-                      <div class="wpo-plan-img">
-                        <img src="assets/images/plan/floor-plan-1.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                      <div class="wpo-plan-content-box">
-                        <div class="wpo-plan-content">
-                          <img src="assets/images/plan/img-1.jpg" alt="" />
-                          <ul>
-                            <li>Area Range <span>370-730 Sq Ft</span></li>
-                            <li>Price/Sq Ft<span>Rs. 60,000</span></li>
-                            <li>Floor Type<span>Commercial</span></li>
-                            <li>Total Units<span>8+</span></li>
-                            <li>Status<span>Available</span></li>
-                          </ul>
-                          <a href="contact.html">Book Now</a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="wpo-plan-item" style="padding: 30px 15px;">
+                  <div class="wpo-plan-img" style="text-align: center; margin-bottom: 30px;">
+                    <img src="assets/images/plan/ground-floor-Photoroom.png" alt="Ground Floor Plan" style="max-width: 100%; border-radius: 8px;" />
+                  </div>
+                  <h3 class="floor-title">Ground Floor (Commercial Outlets)</h3>
+                  <div class="payment-plan-table-wrap">
+                    <table class="payment-plan-table">
+                      <thead>
+                        <tr>
+                          <th>Units No.</th>
+                          <th>Area Sq Ft</th>
+                          <th>Price Per Sq Ft</th>
+                          <th>Total Price</th>
+                          <th>Booking (12.5%)</th>
+                          <th>Confirmation (12.5%)</th>
+                          <th>48 Monthly Installments</th>
+                          <th>Half Yearly (8)</th>
+                          <th>Grey Structure (12.5%)</th>
+                          <th>Possession (12.5%)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="sold-out-row">
+                          <td>G-02</td>
+                          <td>730</td>
+                          <td>60,000</td>
+                          <td>43,800,000</td>
+                          <td colspan="6" class="sold-out-text">SOLD OUT</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>G-03</td>
+                          <td>680</td>
+                          <td>60,000</td>
+                          <td>40,800,000</td>
+                          <td colspan="6" class="sold-out-text">SOLD OUT</td>
+                        </tr>
+                        <tr>
+                          <td>G-06</td>
+                          <td>680</td>
+                          <td>60,000</td>
+                          <td>40,800,000</td>
+                          <td>5,100,000</td>
+                          <td>5,100,000</td>
+                          <td>255,000</td>
+                          <td>1,020,000</td>
+                          <td>5,100,000</td>
+                          <td>5,100,000</td>
+                        </tr>
+                        <tr>
+                          <td>G-07</td>
+                          <td>680</td>
+                          <td>60,000</td>
+                          <td>40,800,000</td>
+                          <td>5,100,000</td>
+                          <td>5,100,000</td>
+                          <td>255,000</td>
+                          <td>1,020,000</td>
+                          <td>5,100,000</td>
+                          <td>5,100,000</td>
+                        </tr>
+                        <tr>
+                          <td>G-10</td>
+                          <td>370</td>
+                          <td>60,000</td>
+                          <td>22,200,000</td>
+                          <td>2,775,000</td>
+                          <td>2,775,000</td>
+                          <td>138,750</td>
+                          <td>555,000</td>
+                          <td>2,775,000</td>
+                          <td>2,775,000</td>
+                        </tr>
+                        <tr>
+                          <td>G-11</td>
+                          <td>370</td>
+                          <td>60,000</td>
+                          <td>22,200,000</td>
+                          <td>2,775,000</td>
+                          <td>2,775,000</td>
+                          <td>138,750</td>
+                          <td>555,000</td>
+                          <td>2,775,000</td>
+                          <td>2,775,000</td>
+                        </tr>
+                        <tr>
+                          <td>G-13</td>
+                          <td>380</td>
+                          <td>60,000</td>
+                          <td>22,800,000</td>
+                          <td>2,850,000</td>
+                          <td>2,850,000</td>
+                          <td>142,500</td>
+                          <td>570,000</td>
+                          <td>2,850,000</td>
+                          <td>2,850,000</td>
+                        </tr>
+                        <tr>
+                          <td>G-14</td>
+                          <td>380</td>
+                          <td>60,000</td>
+                          <td>22,800,000</td>
+                          <td>2,850,000</td>
+                          <td>2,850,000</td>
+                          <td>142,500</td>
+                          <td>570,000</td>
+                          <td>2,850,000</td>
+                          <td>2,850,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
+
+              <!-- 1ST FLOOR (HOTEL APARTMENTS) -->
               <div role="tabpanel" class="tab-pane fade in" id="first-floor">
-                <div class="wpo-plan-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-12">
-                      <div class="wpo-plan-img">
-                        <img src="assets/images/plan/floor-plan-1.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                      <div class="wpo-plan-content-box">
-                        <div class="wpo-plan-content">
-                          <img src="assets/images/plan/img-3.jpg" alt="" />
-                          <ul>
-                            <li>Area Range <span>350-690 Sq Ft</span></li>
-                            <li>Price/Sq Ft<span>Rs. 35,000</span></li>
-                            <li>Floor Type<span>Hotel Apts</span></li>
-                            <li>Total Units<span>3</span></li>
-                            <li>Status<span>Available</span></li>
-                          </ul>
-                          <a href="contact.html">Book Now</a>
-                        </div>
-                      </div>
-                    </div>
+                <div class="wpo-plan-item" style="padding: 30px 15px;">
+                  <div class="wpo-plan-img" style="text-align: center; margin-bottom: 30px;">
+                    <img src="assets/images/plan/first-floor-Photoroom.png" alt="1st Floor Plan" style="max-width: 100%; border-radius: 8px;" />
+                  </div>
+                  <h3 class="floor-title">1st Floor (Hotel Apartments)</h3>
+                  <div class="payment-plan-table-wrap">
+                    <table class="payment-plan-table">
+                      <thead>
+                        <tr>
+                          <th>Units No.</th>
+                          <th>Area Sq Ft</th>
+                          <th>Price Per Sq Ft</th>
+                          <th>Total Price</th>
+                          <th>Booking (12.5%)</th>
+                          <th>Confirmation (12.5%)</th>
+                          <th>48 Monthly Installments</th>
+                          <th>Half Yearly (8)</th>
+                          <th>Grey Structure (12.5%)</th>
+                          <th>Possession (12.5%)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>HA-01</td>
+                          <td>400</td>
+                          <td>35,000</td>
+                          <td>14,000,000</td>
+                          <td>1,750,000</td>
+                          <td>1,750,000</td>
+                          <td>87,500</td>
+                          <td>350,000</td>
+                          <td>1,750,000</td>
+                          <td>1,750,000</td>
+                        </tr>
+                        <tr>
+                          <td>HA-03</td>
+                          <td>350</td>
+                          <td>35,000</td>
+                          <td>12,250,000</td>
+                          <td>1,531,250</td>
+                          <td>1,531,250</td>
+                          <td>76,563</td>
+                          <td>306,250</td>
+                          <td>1,531,250</td>
+                          <td>1,531,250</td>
+                        </tr>
+                        <tr>
+                          <td>HA-06</td>
+                          <td>690</td>
+                          <td>35,000</td>
+                          <td>24,150,000</td>
+                          <td>3,018,750</td>
+                          <td>3,018,750</td>
+                          <td>150,938</td>
+                          <td>603,750</td>
+                          <td>3,018,750</td>
+                          <td>3,018,750</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
-              <div role="tabpanel" class="tab-pane fade in" id="second-floor">
-                <div class="wpo-plan-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-12">
-                      <div class="wpo-plan-img">
-                        <img src="assets/images/plan/floor-plan-1.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                      <div class="wpo-plan-content-box">
-                        <div class="wpo-plan-content">
-                          <img src="assets/images/plan/img-4.jpg" alt="" />
-                          <ul>
-                            <li>Area Range <span>500 Sq Ft</span></li>
-                            <li>Price/Sq Ft<span>Rs. 18,000</span></li>
-                            <li>Floor Type<span>1 & 2 Bed</span></li>
-                            <li>Total Units<span>7</span></li>
-                            <li>Status<span>SOLD OUT</span></li>
-                          </ul>
-                          <a href="contact.html">Contact Us</a>
-                        </div>
-                      </div>
-                    </div>
+
+              <!-- 3RD FLOOR (01 & 02 BED APARTMENTS) - ALL SOLD OUT -->
+              <div role="tabpanel" class="tab-pane fade in" id="third-floor">
+                <div class="wpo-plan-item" style="padding: 30px 15px;">
+                  <div class="wpo-plan-img" style="text-align: center; margin-bottom: 30px;">
+                    <img src="assets/images/plan/third-floor-Photoroom.png" alt="3rd Floor Plan" style="max-width: 100%; border-radius: 8px;" />
+                  </div>
+                  <h3 class="floor-title">3rd Floor (01 &amp; 02 Bed Apartments)</h3>
+                  <div class="payment-plan-table-wrap">
+                    <table class="payment-plan-table">
+                      <thead>
+                        <tr>
+                          <th>Units No.</th>
+                          <th>Area Sq Ft</th>
+                          <th>Price Per Sq Ft</th>
+                          <th>Total Price</th>
+                          <th colspan="6">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="sold-out-row">
+                          <td>AP-304</td>
+                          <td>500</td>
+                          <td>18,000</td>
+                          <td>9,000,000</td>
+                          <td colspan="6" rowspan="7" class="sold-out-text" style="font-size: 36px; vertical-align: middle;">SOLD OUT</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>AP-305</td>
+                          <td>500</td>
+                          <td>18,000</td>
+                          <td>9,000,000</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>AP-312</td>
+                          <td>500</td>
+                          <td>18,000</td>
+                          <td>9,000,000</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>AP-314</td>
+                          <td>500</td>
+                          <td>18,000</td>
+                          <td>9,000,000</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>AP-315</td>
+                          <td>500</td>
+                          <td>18,000</td>
+                          <td>9,000,000</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>AP-316</td>
+                          <td>500</td>
+                          <td>18,000</td>
+                          <td>9,000,000</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>AP-317</td>
+                          <td>500</td>
+                          <td>18,000</td>
+                          <td>9,000,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
-              <div role="tabpanel" class="tab-pane fade in" id="penthouse">
-                <div class="wpo-plan-item">
-                  <div class="row align-items-center">
-                    <div class="col-lg-8 col-md-12">
-                      <div class="wpo-plan-img">
-                        <img src="assets/images/plan/floor-plan-1.jpg" alt="" />
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                      <div class="wpo-plan-content-box">
-                        <div class="wpo-plan-content">
-                          <img src="assets/images/plan/img-5.jpg" alt="" />
-                          <ul>
-                            <li>Area Range <span>1,000-2,400 Sq Ft</span></li>
-                            <li>Price/Sq Ft<span>Rs. 25,000</span></li>
-                            <li>Floor Type<span>Penthouse</span></li>
-                            <li>Total Units<span>6</span></li>
-                            <li>Status<span>Available</span></li>
-                          </ul>
-                          <a href="contact.html">Book Now</a>
-                        </div>
-                      </div>
-                    </div>
+
+              <!-- 5TH FLOOR (STUDIO APARTMENTS) -->
+              <div role="tabpanel" class="tab-pane fade in" id="fifth-floor">
+                <div class="wpo-plan-item" style="padding: 30px 15px;">
+                  <div class="wpo-plan-img" style="text-align: center; margin-bottom: 30px;">
+                    <img src="assets/images/plan/fifth-floor-Photoroom.png" alt="5th Floor Plan" style="max-width: 100%; border-radius: 8px;" />
+                  </div>
+                  <h3 class="floor-title">Fifth Floor (Studio Apartments)</h3>
+                  <div class="payment-plan-table-wrap">
+                    <table class="payment-plan-table">
+                      <thead>
+                        <tr>
+                          <th>Units No.</th>
+                          <th>Area Sq Ft</th>
+                          <th>Price Per Sq Ft</th>
+                          <th>Total Price</th>
+                          <th>Booking (12.5%)</th>
+                          <th>Confirmation (12.5%)</th>
+                          <th>48 Monthly Installments</th>
+                          <th>Half Yearly (8)</th>
+                          <th>Grey Structure (12.5%)</th>
+                          <th>Possession (12.5%)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>AP-502</td>
+                          <td>400</td>
+                          <td>18,000</td>
+                          <td>7,200,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                          <td>45,000</td>
+                          <td>180,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                        </tr>
+                        <tr>
+                          <td>AP-503</td>
+                          <td>400</td>
+                          <td>18,000</td>
+                          <td>7,200,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                          <td>45,000</td>
+                          <td>180,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                        </tr>
+                        <tr>
+                          <td>AP-504</td>
+                          <td>400</td>
+                          <td>18,000</td>
+                          <td>7,200,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                          <td>45,000</td>
+                          <td>180,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                        </tr>
+                        <tr>
+                          <td>AP-512</td>
+                          <td>400</td>
+                          <td>18,000</td>
+                          <td>7,200,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                          <td>45,000</td>
+                          <td>180,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>AP-513</td>
+                          <td>350</td>
+                          <td>18,000</td>
+                          <td>6,300,000</td>
+                          <td colspan="6" class="sold-out-text">SOLD OUT</td>
+                        </tr>
+                        <tr>
+                          <td>AP-519</td>
+                          <td>400</td>
+                          <td>18,000</td>
+                          <td>7,200,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                          <td>45,000</td>
+                          <td>180,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                        </tr>
+                        <tr>
+                          <td>AP-520</td>
+                          <td>320</td>
+                          <td>18,000</td>
+                          <td>5,760,000</td>
+                          <td>720,000</td>
+                          <td>720,000</td>
+                          <td>36,000</td>
+                          <td>144,000</td>
+                          <td>720,000</td>
+                          <td>720,000</td>
+                        </tr>
+                        <tr>
+                          <td>AP-521</td>
+                          <td>260</td>
+                          <td>18,000</td>
+                          <td>4,680,000</td>
+                          <td>585,000</td>
+                          <td>585,000</td>
+                          <td>29,250</td>
+                          <td>117,000</td>
+                          <td>585,000</td>
+                          <td>585,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
+
+              <!-- 6TH FLOOR (STUDIO APARTMENTS) -->
+              <div role="tabpanel" class="tab-pane fade in" id="sixth-floor">
+                <div class="wpo-plan-item" style="padding: 30px 15px;">
+                  <div class="wpo-plan-img" style="text-align: center; margin-bottom: 30px;">
+                    <img src="assets/images/plan/sixth-floor-Photoroom.png" alt="6th Floor Plan" style="max-width: 100%; border-radius: 8px;" />
+                  </div>
+                  <h3 class="floor-title">Sixth Floor (Studio Apartments)</h3>
+                  <div class="payment-plan-table-wrap">
+                    <table class="payment-plan-table">
+                      <thead>
+                        <tr>
+                          <th>Units No.</th>
+                          <th>Area Sq Ft</th>
+                          <th>Price Per Sq Ft</th>
+                          <th>Total Price</th>
+                          <th>Booking (12.5%)</th>
+                          <th>Confirmation (12.5%)</th>
+                          <th>48 Monthly Installments</th>
+                          <th>Half Yearly (8)</th>
+                          <th>Grey Structure (12.5%)</th>
+                          <th>Possession (12.5%)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>AP-603</td>
+                          <td>400</td>
+                          <td>18,000</td>
+                          <td>7,200,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                          <td>45,000</td>
+                          <td>180,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                        </tr>
+                        <tr>
+                          <td>AP-604</td>
+                          <td>400</td>
+                          <td>18,000</td>
+                          <td>7,200,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                          <td>45,000</td>
+                          <td>180,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                        </tr>
+                        <tr>
+                          <td>AP-611</td>
+                          <td>450</td>
+                          <td>18,000</td>
+                          <td>9,900,000</td>
+                          <td>1,237,500</td>
+                          <td>1,237,500</td>
+                          <td>61,875</td>
+                          <td>247,500</td>
+                          <td>1,237,500</td>
+                          <td>1,237,500</td>
+                        </tr>
+                        <tr>
+                          <td>AP-612</td>
+                          <td>350</td>
+                          <td>18,000</td>
+                          <td>7,200,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                          <td>45,000</td>
+                          <td>180,000</td>
+                          <td>900,000</td>
+                          <td>900,000</td>
+                        </tr>
+                        <tr>
+                          <td>AP-621</td>
+                          <td>260</td>
+                          <td>18,000</td>
+                          <td>4,680,000</td>
+                          <td>585,000</td>
+                          <td>585,000</td>
+                          <td>29,250</td>
+                          <td>117,000</td>
+                          <td>585,000</td>
+                          <td>585,000</td>
+                        </tr>
+                        <tr>
+                          <td>AP-622</td>
+                          <td>260</td>
+                          <td>18,000</td>
+                          <td>4,680,000</td>
+                          <td>585,000</td>
+                          <td>585,000</td>
+                          <td>29,250</td>
+                          <td>117,000</td>
+                          <td>585,000</td>
+                          <td>585,000</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>AP-623</td>
+                          <td>260</td>
+                          <td>18,000</td>
+                          <td>4,680,000</td>
+                          <td colspan="6" class="sold-out-text">SOLD OUT</td>
+                        </tr>
+                        <tr>
+                          <td>AP-624</td>
+                          <td>260</td>
+                          <td>18,000</td>
+                          <td>4,680,000</td>
+                          <td>585,000</td>
+                          <td>585,000</td>
+                          <td>29,250</td>
+                          <td>117,000</td>
+                          <td>585,000</td>
+                          <td>585,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 9TH FLOOR (PENTHOUSE APARTMENTS) -->
+              <div role="tabpanel" class="tab-pane fade in" id="ninth-floor">
+                <div class="wpo-plan-item" style="padding: 30px 15px;">
+                  <div class="wpo-plan-img" style="text-align: center; margin-bottom: 30px;">
+                    <img src="assets/images/plan/ninth-floor-Photoroom.png" alt="9th Floor Plan" style="max-width: 100%; border-radius: 8px;" />
+                  </div>
+                  <h3 class="floor-title">Ninth Floor (Penthouse Apartments)</h3>
+                  <div class="payment-plan-table-wrap">
+                    <table class="payment-plan-table">
+                      <thead>
+                        <tr>
+                          <th>Units No.</th>
+                          <th>Area Sq Ft</th>
+                          <th>Price Per Sq Ft</th>
+                          <th>Total Price</th>
+                          <th>Booking (12.5%)</th>
+                          <th>Confirmation (12.5%)</th>
+                          <th>48 Monthly Installments</th>
+                          <th>Half Yearly (8)</th>
+                          <th>Grey Structure (12.5%)</th>
+                          <th>Possession (12.5%)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>PH-01</td>
+                          <td>1,800</td>
+                          <td>25,000</td>
+                          <td>45,000,000</td>
+                          <td>5,625,000</td>
+                          <td>5,625,000</td>
+                          <td>281,250</td>
+                          <td>1,125,000</td>
+                          <td>5,625,000</td>
+                          <td>5,625,000</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>PH-02</td>
+                          <td>1,400</td>
+                          <td>25,000</td>
+                          <td>35,000,000</td>
+                          <td colspan="6" class="sold-out-text">SOLD OUT</td>
+                        </tr>
+                        <tr>
+                          <td>PH-03</td>
+                          <td>2,000</td>
+                          <td>25,000</td>
+                          <td>50,000,000</td>
+                          <td>6,250,000</td>
+                          <td>6,250,000</td>
+                          <td>312,500</td>
+                          <td>1,250,000</td>
+                          <td>6,250,000</td>
+                          <td>6,250,000</td>
+                        </tr>
+                        <tr>
+                          <td>PH-04</td>
+                          <td>1,000</td>
+                          <td>25,000</td>
+                          <td>25,000,000</td>
+                          <td>3,125,000</td>
+                          <td>3,125,000</td>
+                          <td>156,250</td>
+                          <td>625,000</td>
+                          <td>3,125,000</td>
+                          <td>3,125,000</td>
+                        </tr>
+                        <tr class="sold-out-row">
+                          <td>PH-05</td>
+                          <td>1,000</td>
+                          <td>25,000</td>
+                          <td>25,000,000</td>
+                          <td colspan="6" class="sold-out-text">SOLD OUT</td>
+                        </tr>
+                        <tr>
+                          <td>PH-06</td>
+                          <td>2,400</td>
+                          <td>25,000</td>
+                          <td>60,000,000</td>
+                          <td>7,500,000</td>
+                          <td>7,500,000</td>
+                          <td>375,000</td>
+                          <td>1,500,000</td>
+                          <td>7,500,000</td>
+                          <td>7,500,000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Discount Policy -->
+            <div class="discount-policy">
+              <p class="confirm-note">Confirmation to be paid within 15 days of booking.</p>
+              <h4>Discount Policy:</h4>
+              <ul>
+                <li>10% discount on full payment.</li>
+                <li>Prices can be changed anytime without any prior notice.</li>
+                <li>Payments should be made through "dd, p/o, cross cheque or bank transfer".</li>
+                <li>Receipt of payments should be collected at the same time when payment is made else the company will not be responsible for anything.</li>
+                <li>For quarterly installments dp will be 40%, semi installment dp will be 50% and annual installments dp will be 60% of total amount.</li>
+                <li>All areas are gross and approx.</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -865,35 +1344,35 @@
           <div class="wpo-team-wrap owl-carousel">
             <div class="wpo-team-item">
               <div class="wpo-team-img">
-                <img src="assets/images/team/1.jpg" alt="" />
+                <img src="assets/images/team/ajmal.png" alt="Ch. M. Ajmal" />
               </div>
               <div class="wpo-team-content">
-                <p>Brooklyn Simmons</p>
-                <span>property agent</span>
-                <h3>+00-569-845-79</h3>
-                <span>E-mail: property@gmail.com</span>
+                <p>Ch. M. Ajmal</p>
+                <span>Managing Director</span>
+                <h3>0304-6666703</h3>
+                <span>E-mail: mdajmal@aamonarch.com</span>
               </div>
             </div>
             <div class="wpo-team-item">
               <div class="wpo-team-img">
-                <img src="assets/images/team/2.jpg" alt="" />
+                <img src="assets/images/team/umair.png" alt="Umair Amjad" />
               </div>
               <div class="wpo-team-content">
-                <p>Ken Williamson</p>
-                <span>property agent</span>
-                <h3>+00-569-845-79</h3>
-                <span>E-mail: property@gmail.com</span>
+                <p>Umair Amjad</p>
+                <span>Chief Executive Officer (CEO)</span>
+                <h3>0321-4262844</h3>
+                <span>E-mail: umairamjad@aamonarch.com</span>
               </div>
             </div>
             <div class="wpo-team-item">
               <div class="wpo-team-img">
-                <img src="assets/images/team/3.jpg" alt="" />
+                <img src="assets/images/team/ubaid.png" alt="Hafiz Ubaid Zahid" />
               </div>
               <div class="wpo-team-content">
-                <p>Robert Miller</p>
-                <span>property agent</span>
-                <h3>+00-569-845-79</h3>
-                <span>E-mail: property@gmail.com</span>
+                <p>Hafiz Ubaid Zahid</p>
+                <span>Project Director</span>
+                <h3>0322-3209209</h3>
+                <span>E-mail: ubaid@aamonarch.com</span>
               </div>
             </div>
           </div>
@@ -1043,23 +1522,18 @@
                 <div class="social">
                   <ul>
                     <li>
-                      <a href="#">
+                      <a href="https://www.facebook.com/share/1Wnd2sYoGs/" target="_blank">
                         <i class="ti-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="ti-twitter"></i>
+                      <a href="https://www.instagram.com/aamonarchdevelopers?igsh=MTZ4cmRwYnpkdnNncQ==" target="_blank">
+                        <i class="ti-instagram"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <i class="ti-linkedin"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="ti-pinterest"></i>
+                      <a href="https://youtube.com/@monarchheightsofficial?si=2kF7ssugTE7PugVf" target="_blank">
+                        <i class="ti-youtube"></i>
                       </a>
                     </li>
                   </ul>
@@ -1088,7 +1562,7 @@
     <!-- Plugins for this template -->
     <script src="assets/js/modernizr.custom.js"></script>
     <script src="assets/js/jquery-plugin-collection.js"></script>
-    <script src="assets/js/payment-cal.js"></script>
+    <script src="assets/js/payment-cal.js?v=2"></script>
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
   </body>
