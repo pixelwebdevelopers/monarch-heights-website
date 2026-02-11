@@ -4393,6 +4393,19 @@ img {
         flex-wrap: wrap;
     height: auto;
   }
+  .hero-left-content .hero-left-content-inner.owl-carousel {
+    display: block;
+    padding-bottom: 0px; 
+  }
+  #funFactsSlider .owl-nav, 
+  #funFactsSlider .owl-dots {
+    display: none !important;
+  }
+  .hero-left-content .hero-left-content-inner.owl-carousel .hero-left-content-item {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
 }
 
 .hero-left-content .hero-left-content-inner .hero-left-content-item {

@@ -218,7 +218,7 @@
         </div>
       </section>
       <div class="hero-left-content">
-        <div class="hero-left-content-inner">
+        <div class="hero-left-content-inner" id="funFactsSlider">
           <div class="hero-left-content-item">
             <h2>104,570</h2>
             <span>Square Feet</span>
@@ -704,10 +704,43 @@
           navText: ['<i class="ti-arrow-left"></i>', '<i class="ti-arrow-right"></i>'],
           margin: 20,
           responsive: {
-            0: { items: 1 },
-            768: { items: 2 },
-            992: { items: 3 }
+            0: { items: 1, nav: false },
+            768: { items: 2, nav: true },
+            992: { items: 3, nav: true }
           }
+        });
+
+        // Mobile Fun Facts Slider
+        function initFunFactsSlider() {
+          var $slider = $('#funFactsSlider');
+          if ($(window).width() < 768) {
+            if (!$slider.hasClass('owl-carousel')) {
+              $slider.addClass('owl-carousel owl-theme');
+              $slider.owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                slideTransition: 'linear',
+                autoplayTimeout: 3000,
+                autoplaySpeed: 3000,
+                autoplayHoverPause: false,
+                items: 2,
+                dots: false,
+                nav: false
+              });
+            }
+          } else {
+            if ($slider.hasClass('owl-carousel')) {
+              $slider.trigger('destroy.owl.carousel');
+              $slider.removeClass('owl-carousel owl-theme');
+              $slider.find('.owl-stage-outer').children().unwrap();
+            }
+          }
+        }
+
+        initFunFactsSlider();
+        $(window).resize(function() {
+          initFunFactsSlider();
         });
       });
     </script>
