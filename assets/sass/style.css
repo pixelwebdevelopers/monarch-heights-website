@@ -436,7 +436,7 @@ img {
   bottom: 19px;
   width: 96%;
   height: 19px;
-  background: #4dabf7;
+  background: #5fadc1;
   content: "";
   z-index: -1;
 }
@@ -797,7 +797,7 @@ img {
 }
 
 .preloader {
-  background-color: #1c1817;
+  background-color: #01203c;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -1366,7 +1366,7 @@ img {
 }
 
 .blog-sidebar .wpo-newsletter-widget .form button {
-  background: #01203c;
+  background: #036176;
   width: 100%;
   height: 55px;
   border-radius: 10px;
@@ -2720,7 +2720,7 @@ img {
     box-shadow: none;
   }
   .wpo-site-header .mobail-menu button span {
-    background-color: #1c1817;
+    background-color: #ffffff;
     width: 20px;
     display: block;
     height: 2px;
@@ -2730,7 +2730,7 @@ img {
     margin: 0;
   }
   .wpo-site-header #navbar {
-    background: #1c1817;
+    background: #01203c;
     display: block !important;
     width: 300px;
     height: 100%;
@@ -3092,12 +3092,12 @@ img {
 
 @media (max-width: 767px) {
   .wpo-header-style-4 .navigation {
-    background: #1c1817;
+    background: #01203c;
   }
 }
 
 .wpo-header-style-4 .navigation.sticky-header {
-  background: #1c1817;
+  background: #01203c;
   padding: 0;
   z-index: 111;
 }
@@ -3211,7 +3211,7 @@ img {
   top: 25px;
   width: 45px;
   height: 45px;
-  background: #1c1817;
+  background: #01203c;
   border-radius: 50%;
   text-align: center;
   line-height: 45px;
@@ -4023,7 +4023,7 @@ img {
     from(#01203c),
     to(rgba(255, 255, 255, 0))
   );
-  background: linear-gradient(90deg, #01203c 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(90deg, #5fadc1 0%, rgba(255, 255, 255, 0) 100%);
   z-index: -1;
 }
 
@@ -4040,7 +4040,7 @@ img {
   line-height: 30px;
   text-transform: capitalize;
   margin-left: 10px;
-  color: #4dabf7;
+  color: #223c70;
 }
 
 @media (max-width: 1399px) {
@@ -4152,7 +4152,7 @@ img {
   bottom: 19px;
   width: 96%;
   height: 19px;
-  background: #4dabf7;
+  background: #5fadc1;
   content: "";
   z-index: -1;
 }
@@ -4223,7 +4223,7 @@ img {
   top: 25px;
   width: 45px;
   height: 45px;
-  background: #1c1817;
+  background: #01203c;
   border-radius: 50%;
   text-align: center;
   line-height: 45px;
@@ -4423,7 +4423,7 @@ img {
 
 .wpo-hero-slider-1 .slick-dots li button {
   font-size: 0px;
-  background: #1c1817;
+  background: #01203c;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -4524,6 +4524,7 @@ img {
   .hero-left-content .hero-left-content-inner {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
+    background-color: #c1e1e9;
   }
 }
 
@@ -4533,6 +4534,7 @@ img {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: auto;
+    background-color: #c1e1e9;
   }
   .hero-left-content .hero-left-content-inner.owl-carousel {
     display: block;
@@ -4639,7 +4641,7 @@ img {
   height: 68px;
   display: block;
   border-radius: 68px;
-  background: #1c1817;
+  background: #01203c;
   position: relative;
   margin: 0 auto;
   top: -30px;
@@ -4699,7 +4701,7 @@ img {
 --------------------------------------------------------------*/
 .wpo-site-footer,
 .wpo-site-footer-s2 {
-  background: #1c1817;
+  background: #01203c;
   position: relative;
   font-size: 15px;
   overflow: hidden;
@@ -4939,7 +4941,7 @@ img {
 
 .wpo-site-footer .newsletter-widget form .submit button,
 .wpo-site-footer-s2 .newsletter-widget form .submit button {
-  background: #01203c;
+  background: #036176;
   border: 0;
   outline: 0;
   color: #ffffff;
@@ -5482,7 +5484,7 @@ img {
 .wpo-about-section .wpo-about-wrap .about-content {
   max-width: 340px;
   padding: 50px 45px;
-  background: #1c1817;
+  background: #01203c;
   position: relative;
   overflow: hidden;
 }
@@ -6248,6 +6250,7 @@ img {
   .nav-item
   .nav-link.active {
   background: #01203c;
+  color: #fff;
 }
 
 .wpo-plan-section .wpo-plan-wrap .wpo-plan-content-box,
@@ -7335,7 +7338,7 @@ img {
 
 .wpo-testimonial-section .wpo-testimonial-wrap .testimonial-top-wrap ul li,
 .wpo-testimonial-section-s2 .wpo-testimonial-wrap .testimonial-top-wrap ul li {
-  color: #94a100;
+  color: #01203c;
   font-size: 18px;
 }
 
@@ -13650,6 +13653,7 @@ img {
   font-weight: 500;
   background: #01203c;
   line-height: 27px;
+  color: #ffffff;
 }
 
 @media (max-width: 991px) {
@@ -13672,6 +13676,7 @@ img {
 
 .wpo-faq-section .accordion-item button.collapsed {
   background: #fff;
+  color: #1c1817;
 }
 
 .wpo-faq-section .accordion-item button.collapsed::after {
@@ -13829,7 +13834,7 @@ img {
   padding: 17px 40px;
   border: none;
   background: #01203c;
-  color: #1c1817;
+  color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   outline: none;
@@ -13942,7 +13947,7 @@ img {
 }
 
 .wpo-completed-projects-section .wpo-section-title h2 span::before {
-  background: #4dabf7;
+  background: #5fadc1;
 }
 
 .wpo-completed-projects-section .wpo-section-title small {
@@ -14277,7 +14282,7 @@ h3.floor-title {
 }
 
 .discount-policy {
-  background: #faf9f0;
+  background: #01203c;
   border: 1px solid #e0e0d0;
   padding: 25px 30px;
   margin-top: 30px;
@@ -14288,7 +14293,7 @@ h3.floor-title {
   font-family: "Epilogue";
   font-size: 16px;
   font-weight: 700;
-  color: #1c1817;
+  color: #ffffff;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
@@ -14298,7 +14303,7 @@ h3.floor-title {
   font-size: 14px;
   font-weight: 600;
   font-style: italic;
-  color: #1c1817;
+  color: #ffffff;
   margin-bottom: 15px;
 }
 
@@ -14311,7 +14316,7 @@ h3.floor-title {
 .discount-policy ul li {
   font-family: "Epilogue";
   font-size: 13px;
-  color: #424740;
+  color: #c1c7be;
   padding: 4px 0;
   padding-left: 20px;
   position: relative;
@@ -14460,6 +14465,122 @@ h3.floor-title {
   .wpo-site-footer .footer-logo-widget .footer-logo-white {
     margin: 20px auto 0 !important;
   }
+}
+
+/*--------------------------------------------------------------
+Dark Theme Payment Section Styles
+--------------------------------------------------------------*/
+.wpo-payment-section {
+    background-color: #0e2a47 !important;
+    background-image: url('../../assets/images/slider/noise.png'); 
+    background-blend-mode: overlay;
+    color: #ffffff;
+}
+
+.wpo-payment-section .wpo-section-title small {
+    background: #ffffff !important;
+    color: #1c1817 !important;
+    font-weight: 700;
+}
+
+.wpo-payment-section .wpo-section-title h2 {
+    color: #ffffff !important;
+}
+
+.wpo-payment-section .wpo-section-title h2 span::before {
+    background: #5fadc1 !important; /* Forces color application */
+    opacity: 1 !important; /* Ensure full visibility */
+    /* Ensure it is not hidden behind section background */
+}
+
+/* Form Styles */
+.payment-form-area label {
+    color: #ffffff !important;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 600;
+}
+
+.payment-form-area input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #ffffff !important;
+    height: 50px;
+    padding: 0 15px;
+    border-radius: 0;
+}
+
+.payment-form-area input:focus {
+    border-color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Result Cards - Dark Theme */
+.payment-results-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.payment-result-card {
+    background: #151515 !important;
+    border: 1px solid #222 !important;
+    padding: 25px 15px;
+    border-radius: 6px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.payment-result-card span {
+    color: #5fadc1 !important; /* Updated to requested color */
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.payment-result-card h3 {
+    color: #ffffff !important;
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Highlight Card Override */
+.payment-result-card.highlight {
+    background: #151515 !important; /* Keep same bg as others */
+    border: 1px solid #222 !important;
+}
+
+.payment-result-card.highlight span {
+    color: #5fadc1 !important; /* Updated to requested color */
+}
+
+.payment-result-card.highlight h3 {
+    color: #ffffff !important;
+    font-size: 20px; /* Maybe slightly larger */
+}
+
+/* Responsive adjustments for new grid */
+@media (max-width: 991px) {
+    .payment-results-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    .payment-results-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .payment-result-card {
+        padding: 15px 10px;
+    }
 }
 
 /*# sourceMappingURL=style.css.map */
