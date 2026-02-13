@@ -474,7 +474,7 @@ img {
 .view-cart-btn:focus,
 .theme-btn:active,
 .view-cart-btn:active {
-  background: #dff01b;
+  background: #efdcaa;
   color: #1c1817;
 }
 
@@ -3167,7 +3167,7 @@ img {
 }
 
 .wpo-header-style-4 .price-btn:hover {
-  background: #dff01b;
+  background: #efdcaa;
 }
 
 .wpo-header-style-4 .price-btn span {
@@ -13278,7 +13278,7 @@ img {
 }
 
 .wpo-blog-single-section .comment-respond .form-submit input:hover {
-  background-color: #dff01b;
+  background-color: #efdcaa;
 }
 
 @media screen and (min-width: 1200px) {
