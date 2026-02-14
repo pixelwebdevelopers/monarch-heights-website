@@ -429,17 +429,7 @@ img {
   display: inline-block;
 }
 
-.wpo-section-title h2 span::before,
-.wpo-section-title-s2 h2 span::before {
-  position: absolute;
-  left: 5px;
-  bottom: 19px;
-  width: 96%;
-  height: 19px;
-  background: #5fadc1;
-  content: "";
-  z-index: -1;
-}
+
 
 .wpo-section-title p,
 .wpo-section-title-s2 p {
@@ -4146,16 +4136,7 @@ img {
   z-index: 1;
 }
 
-.wpo-hero-slider-1 .slide-title h2 span::before {
-  position: absolute;
-  left: 5px;
-  bottom: 19px;
-  width: 96%;
-  height: 19px;
-  background: #5fadc1;
-  content: "";
-  z-index: -1;
-}
+
 
 .wpo-hero-slider-1 .slide-subtitle p {
   font-family: "Epilogue";
@@ -4524,7 +4505,7 @@ img {
   .hero-left-content .hero-left-content-inner {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    background-color: #c1e1e9;
+    background-color: #01203c;
   }
 }
 
@@ -4534,7 +4515,7 @@ img {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     height: auto;
-    background-color: #c1e1e9;
+    background-color: #01203c;
   }
   .hero-left-content .hero-left-content-inner.owl-carousel {
     display: block;
@@ -4588,6 +4569,7 @@ img {
 @media (max-width: 991px) {
   .hero-left-content .hero-left-content-inner .hero-left-content-item h2 {
     font-size: 25px;
+    color:white;
   }
 }
 

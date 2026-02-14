@@ -59,16 +59,7 @@
 			z-index: 1;
 			display: inline-block;
 
-			&::before {
-				position: absolute;
-				left: 5px;
-				bottom: 19px;
-				width: 96%;
-				height: 19px;
-				background: $theme-primary-color;
-				content: "";
-				z-index: -1;
-			}
+
 		}
 
 	}
