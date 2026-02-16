@@ -366,7 +366,8 @@ img {
   text-transform: uppercase;
   display: inline-block;
   padding: 5px 30px;
-  background: #F0F8FF;
+  background: #02203b;
+  color: white;
   margin-bottom: 30px;
 }
 
@@ -4204,11 +4205,11 @@ img {
   top: 25px;
   width: 45px;
   height: 45px;
-  background: #01203c;
+  background: #ffffff;
   border-radius: 50%;
   text-align: center;
   line-height: 45px;
-  color: #fff;
+  color: #01203c;
 }
 
 .wpo-hero-slider-1 .hero-btn i:before {
@@ -4854,7 +4855,7 @@ img {
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   color: #fff;
 }
 
