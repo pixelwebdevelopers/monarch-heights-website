@@ -17,8 +17,17 @@ function estimatePayment() {
 
     let bookingAmount = totalPrice * 0.125;
     let confirmationAmount = totalPrice * 0.125;
-    let installmentTotal = totalPrice * 0.5;
+
+    // 30% of total amount for monthly installments
+    let installmentTotal = totalPrice * 0.30;
     let monthlyInstallment = installmentTotal / installmentMonths;
+
+    // 20% for half year installment
+    // Assuming 48 months, there are 8 half-yearly payments (48 / 6 = 8)
+    let halfYearlyTotal = totalPrice * 0.20;
+    let numberOfHalfYearlyPayments = installmentMonths / 6;
+    let halfYearlyInstallment = halfYearlyTotal / numberOfHalfYearlyPayments;
+
     let greyStructure = totalPrice * 0.125;
     let possession = totalPrice * 0.125;
 
@@ -31,6 +40,8 @@ function estimatePayment() {
         formatPKR(bookingAmount);
     document.getElementById("monthly_payment_value").textContent =
         formatPKR(monthlyInstallment);
+    document.getElementById("half_yearly_value").textContent =
+        formatPKR(halfYearlyInstallment);
     document.getElementById("load_amount_value").textContent =
         formatPKR(confirmationAmount);
     document.getElementById("grey_structure_value").textContent =
