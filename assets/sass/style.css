@@ -14567,4 +14567,17 @@ Dark Theme Payment Section Styles
     }
 }
 
+/* Forcefully remove underlines from the entire website */
+*, *::before, *::after, a, a:hover, a:focus, a:active {
+    text-decoration: none !important;
+}
+@media (max-width: 767px) {
+    .wpo-about-section{
+        margin-top: -80px;
+    }
+        .hero-left-content .hero-left-video {
+        padding: 20px 0;
+        height: 50px;
+    }
+}
 /*# sourceMappingURL=style.css.map */
