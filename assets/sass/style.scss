@@ -140,6 +140,32 @@ Version:        1.0.0
     text-decoration: none !important;
 }
 
+/* Team 2-Member Layout & Hover Enhancement */
+.wpo-team-section .wpo-team-wrap .row {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.wpo-team-section .wpo-team-wrap .wpo-team-item {
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(1, 32, 60, 0.12);
+    border-color: rgba(204, 164, 113, 0.4);
 
+    .wpo-team-img {
+      transform: scale(1.04);
+      border-color: #cca471;
+    }
+  }
+
+  .wpo-team-img {
+    transition: transform 0.35s ease, border-color 0.35s ease;
+  }
+}

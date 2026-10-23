@@ -14761,4 +14761,35 @@ Dark Theme Payment Section Styles
     transform: scale(0.92);
   }
 }
+
+/* Team 2-Member Layout & Hover Enhancement */
+.wpo-team-section .wpo-team-wrap .row {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wpo-team-section .wpo-team-wrap .wpo-team-item {
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.wpo-team-section .wpo-team-wrap .wpo-team-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(1, 32, 60, 0.12);
+  border-color: rgba(204, 164, 113, 0.4);
+}
+
+.wpo-team-section .wpo-team-wrap .wpo-team-item .wpo-team-img {
+  transition: transform 0.35s ease, border-color 0.35s ease;
+}
+
+.wpo-team-section .wpo-team-wrap .wpo-team-item:hover .wpo-team-img {
+  transform: scale(1.04);
+  border-color: #cca471;
+}
+
 /*# sourceMappingURL=style.css.map */

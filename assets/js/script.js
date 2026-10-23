@@ -534,8 +534,8 @@
     /*------------------------------------------
         = Team SLIDER
     -------------------------------------------*/
-    if ($(".wpo-team-wrap").length) {
-        $(".wpo-team-wrap").owlCarousel({
+    if ($(".wpo-team-wrap.owl-carousel").length) {
+        $(".wpo-team-wrap.owl-carousel").owlCarousel({
             autoplay: false,
             smartSpeed: 300,
             margin: 120,
